@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('build project'){
             steps{
-                git url:'https://github.com/sabrintaj/star-agile-banking-finance', branch: "master"
+                git url:'https://github.com/sabrintaj/star-agile-banking-finance.git', branch: "master"
                 sh 'mvn clean package'
               
             }
